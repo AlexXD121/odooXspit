@@ -76,7 +76,8 @@ To verify the system is working correctly:
 4.  Check **Settings > Warehouse** and **Settings > Locations** to see the seeded locations.
 
 ---
-*Built for the Kargo Hackathon.*
+*Built for the odoo hackathon*
+---
 *login cresidentials.*
 Login Credentials
 Email: admin@kargo.com or staff@kargo.com
