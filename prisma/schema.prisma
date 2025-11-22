@@ -1,0 +1,77 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Users (Simple Mock Auth)
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  password  String   
+  name      String?
+  role      String   @default("STAFF") // "MANAGER", "STAFF"
+  createdAt DateTime @default(now())
+}
+
+// Product Definitions
+model Product {
+  id           String   @id @default(uuid())
+  name         String
+  sku          String   @unique
+  category     String   // e.g., "Raw Material", "Finished Goods"
+  description  String?
+  minStock     Int      @default(0) // Alert trigger
+  currentStock Int      @default(0) // Cached quantity (updated via transaction)
+  
+  moves        StockMove[]
+  createdAt    DateTime @default(now())
+}
+
+// Physical or Virtual Places (The nodes in the graph)
+model Location {
+  id        String   @id @default(uuid())
+  name      String   
+  type      String   // "INTERNAL" (Warehouse), "VENDOR", "CUSTOMER", "INVENTORY_LOSS"
+  
+  movesFrom StockMove[] @relation("SourceLocation")
+  movesTo   StockMove[] @relation("DestLocation")
+}
+
+// The "Header" for a group of moves (e.g., a single Receipt slip)
+model Operation {
+  id          String      @id @default(uuid())
+  type        String      // "RECEIPT", "DELIVERY", "INTERNAL", "ADJUSTMENT"
+  status      String      @default("DRAFT") // "DRAFT", "DONE", "CANCELLED"
+  reference   String      @unique // Auto-generated e.g., "WH/IN/0001"
+  
+  moves       StockMove[]
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+}
+
+// The "Ledger Lines" - The Atom of the system
+model StockMove {
+  id             String    @id @default(uuid())
+  quantity       Int
+  
+  productId      String
+  product        Product   @relation(fields: [productId], references: [id])
+  
+  operationId    String?
+  operation      Operation? @relation(fields: [operationId], references: [id])
+  
+  // Where it came from
+  sourceLocationId String
+  sourceLocation   Location @relation("SourceLocation", fields: [sourceLocationId], references: [id])
+  
+  // Where it went
+  destLocationId   String
+  destLocation     Location @relation("DestLocation", fields: [destLocationId], references: [id])
+  
+  status         String    @default("DRAFT") // Inherits from Operation
+  createdAt      DateTime  @default(now())
+}
