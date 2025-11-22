@@ -1,0 +1,16 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
+  "/favicon.ico/route": "/favicon.ico",
+  "/login/page": "/login",
+  "/move-history/page": "/move-history",
+  "/operations/adjustment/page": "/operations/adjustment",
+  "/operations/delivery/page": "/operations/delivery",
+  "/operations/receipt/page": "/operations/receipt",
+  "/page": "/",
+  "/register/page": "/register",
+  "/settings/locations/page": "/settings/locations",
+  "/settings/warehouse/page": "/settings/warehouse",
+  "/stock/page": "/stock"
+}

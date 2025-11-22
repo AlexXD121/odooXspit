@@ -1,0 +1,80 @@
+{
+  "node": {
+    "40d12781802ab3aab57f0ca9725d2f90dea69b1725": {
+      "workers": {
+        "app/stock/page": {
+          "moduleId": 58469,
+          "async": false,
+          "exportedName": "preAuthenticate",
+          "filename": "app/lib/actions/auth-actions.ts"
+        }
+      },
+      "layer": {
+        "app/stock/page": "action-browser"
+      },
+      "exportedName": "preAuthenticate",
+      "filename": "app/lib/actions/auth-actions.ts"
+    },
+    "6089715bce84d2d6ec2b584d091fb47ceb9a4a00c4": {
+      "workers": {
+        "app/stock/page": {
+          "moduleId": 58469,
+          "async": false,
+          "exportedName": "authenticate",
+          "filename": "app/lib/actions/auth-actions.ts"
+        }
+      },
+      "layer": {
+        "app/stock/page": "action-browser"
+      },
+      "exportedName": "authenticate",
+      "filename": "app/lib/actions/auth-actions.ts"
+    },
+    "60b78c7cae6fecc38121e5674933901f3d21b0f3dc": {
+      "workers": {
+        "app/stock/page": {
+          "moduleId": 58469,
+          "async": false,
+          "exportedName": "registerUser",
+          "filename": "app/lib/actions/auth-actions.ts"
+        }
+      },
+      "layer": {
+        "app/stock/page": "action-browser"
+      },
+      "exportedName": "registerUser",
+      "filename": "app/lib/actions/auth-actions.ts"
+    },
+    "00113b3ea0d5bdec66bf3a02a9e7d2d58ec09f7cf9": {
+      "workers": {
+        "app/stock/page": {
+          "moduleId": 58469,
+          "async": false,
+          "exportedName": "signOutAction",
+          "filename": "app/lib/actions/auth-actions.ts"
+        }
+      },
+      "layer": {
+        "app/stock/page": "action-browser"
+      },
+      "exportedName": "signOutAction",
+      "filename": "app/lib/actions/auth-actions.ts"
+    },
+    "40c8e8b28bd4799663a9c704ee0df81d819a5fef28": {
+      "workers": {
+        "app/stock/page": {
+          "moduleId": 58469,
+          "async": false,
+          "exportedName": "createProduct",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/stock/page": "action-browser"
+      },
+      "exportedName": "createProduct",
+      "filename": "app/actions.ts"
+    }
+  },
+  "edge": {}
+}

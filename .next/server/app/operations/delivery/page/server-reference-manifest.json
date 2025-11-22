@@ -1,0 +1,95 @@
+{
+  "node": {
+    "40d12781802ab3aab57f0ca9725d2f90dea69b1725": {
+      "workers": {
+        "app/operations/delivery/page": {
+          "moduleId": 98078,
+          "async": false,
+          "exportedName": "preAuthenticate",
+          "filename": "app/lib/actions/auth-actions.ts"
+        }
+      },
+      "layer": {
+        "app/operations/delivery/page": "action-browser"
+      },
+      "exportedName": "preAuthenticate",
+      "filename": "app/lib/actions/auth-actions.ts"
+    },
+    "6089715bce84d2d6ec2b584d091fb47ceb9a4a00c4": {
+      "workers": {
+        "app/operations/delivery/page": {
+          "moduleId": 98078,
+          "async": false,
+          "exportedName": "authenticate",
+          "filename": "app/lib/actions/auth-actions.ts"
+        }
+      },
+      "layer": {
+        "app/operations/delivery/page": "action-browser"
+      },
+      "exportedName": "authenticate",
+      "filename": "app/lib/actions/auth-actions.ts"
+    },
+    "60b78c7cae6fecc38121e5674933901f3d21b0f3dc": {
+      "workers": {
+        "app/operations/delivery/page": {
+          "moduleId": 98078,
+          "async": false,
+          "exportedName": "registerUser",
+          "filename": "app/lib/actions/auth-actions.ts"
+        }
+      },
+      "layer": {
+        "app/operations/delivery/page": "action-browser"
+      },
+      "exportedName": "registerUser",
+      "filename": "app/lib/actions/auth-actions.ts"
+    },
+    "00113b3ea0d5bdec66bf3a02a9e7d2d58ec09f7cf9": {
+      "workers": {
+        "app/operations/delivery/page": {
+          "moduleId": 98078,
+          "async": false,
+          "exportedName": "signOutAction",
+          "filename": "app/lib/actions/auth-actions.ts"
+        }
+      },
+      "layer": {
+        "app/operations/delivery/page": "action-browser"
+      },
+      "exportedName": "signOutAction",
+      "filename": "app/lib/actions/auth-actions.ts"
+    },
+    "4048651bffbe37641cefaa45bbef7e6267e0e9f505": {
+      "workers": {
+        "app/operations/delivery/page": {
+          "moduleId": 98078,
+          "async": false,
+          "exportedName": "createOutboundOperation",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/operations/delivery/page": "action-browser"
+      },
+      "exportedName": "createOutboundOperation",
+      "filename": "app/actions.ts"
+    },
+    "40cb085986bcc83091452049a13d27533875576451": {
+      "workers": {
+        "app/operations/delivery/page": {
+          "moduleId": 98078,
+          "async": false,
+          "exportedName": "validateOperation",
+          "filename": "app/actions.ts"
+        }
+      },
+      "layer": {
+        "app/operations/delivery/page": "action-browser"
+      },
+      "exportedName": "validateOperation",
+      "filename": "app/actions.ts"
+    }
+  },
+  "edge": {}
+}
