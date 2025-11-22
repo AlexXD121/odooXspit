@@ -83,3 +83,28 @@ Login Credentials
 Email: admin@kargo.com or staff@kargo.com
 Password: password123
 OTP (One-Time Password): 111111
+
+---
+Team Name : Spybytes
+
+Team Leader : Dhaval Rathva
+Age : 19
+Email : dmr19104@gmail.com
+
+Member 1 : Harsh J Patel
+Age : 19
+Email : harshjpatel2005@gmail.com
+
+Member 2 : Garasiya Jaykumar Nandlal
+Age : 20
+Email : garasiyajay@gmail.com
+---
+Reviewer:- Aman Patel(ampa)
+--- 
+problem statement:-Build a modular Inventory Management System (IMS) that digitizes and
+streamlines all stock-related operations within a business. The goal is to replace
+manual registers, Excel sheets, and scattered tracking methods with a centralized,
+real-time, easy-to-use app.
+---
+Demo Video Link:-
+---
