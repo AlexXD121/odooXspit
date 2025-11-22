@@ -107,5 +107,5 @@ streamlines all stock-related operations within a business. The goal is to repla
 manual registers, Excel sheets, and scattered tracking methods with a centralized,
 real-time, easy-to-use app.
 ---
-Demo Video Link:-
+Demo Video Link:- https://youtu.be/66HHAw6r3Qo
 ---
