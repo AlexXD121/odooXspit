@@ -77,3 +77,8 @@ To verify the system is working correctly:
 
 ---
 *Built for the Kargo Hackathon.*
+*login cresidentials.*
+Login Credentials
+Email: admin@kargo.com or staff@kargo.com
+Password: password123
+OTP (One-Time Password): 111111
